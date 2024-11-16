@@ -34,6 +34,7 @@ struct FCFSView: View {
                 // Processes Table Section
                 if !viewModel.processes.isEmpty {
                     ProcessesTable(processes: viewModel.processes)
+                        .padding(.horizontal)
                 }
                 
                 Spacer()
@@ -88,6 +89,7 @@ struct FCFSView: View {
                     .padding(.horizontal)
                 }
             }
+            .padding(10)
             .scrollDismissesKeyboard(.immediately)
             
             Spacer()
